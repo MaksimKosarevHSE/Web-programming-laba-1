@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Северный свет — киноафиша</title>
+  <desc id="desc">Абстрактное северное сияние над заснеженными горами.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#06141f"/>
+      <stop offset=".58" stop-color="#102d3d"/>
+      <stop offset="1" stop-color="#051016"/>
+    </linearGradient>
+    <linearGradient id="auroraA" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4effc2" stop-opacity="0"/>
+      <stop offset=".46" stop-color="#53f7c0" stop-opacity=".9"/>
+      <stop offset="1" stop-color="#88a9ff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="auroraB" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#b77aff" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#65d5ec" stop-opacity=".75"/>
+      <stop offset="1" stop-color="#5affbb" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="snow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e8f7f6"/>
+      <stop offset="1" stop-color="#7998a5"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="17"/>
+    </filter>
+  </defs>
+  <rect width="600" height="900" fill="url(#bg)"/>
+  <g fill="#d9fffa">
+    <circle cx="72" cy="91" r="1.8"/><circle cx="142" cy="177" r="1.1"/><circle cx="216" cy="76" r="1.4"/>
+    <circle cx="336" cy="138" r="1.7"/><circle cx="421" cy="66" r="1"/><circle cx="531" cy="155" r="1.6"/>
+    <circle cx="487" cy="241" r="1"/><circle cx="285" cy="221" r="1.2"/><circle cx="102" cy="281" r="1.3"/>
+    <circle cx="554" cy="342" r="1.4"/><circle cx="387" cy="302" r=".9"/><circle cx="42" cy="356" r="1"/>
+  </g>
+  <path d="M-80 350C77 147 166 137 287 236c104 86 190 45 380-81" fill="none" stroke="url(#auroraA)" stroke-width="88" stroke-linecap="round" opacity=".28" filter="url(#glow)"/>
+  <path d="M-61 312C83 163 175 157 288 247c101 80 192 53 368-74" fill="none" stroke="url(#auroraA)" stroke-width="30" stroke-linecap="round" opacity=".92"/>
+  <path d="M-31 417C98 262 203 251 323 329c94 62 180 29 324-66" fill="none" stroke="url(#auroraB)" stroke-width="28" stroke-linecap="round" opacity=".55"/>
+  <path d="M-22 395C115 238 222 233 339 316c90 64 176 30 306-55" fill="none" stroke="#75f8d1" stroke-width="2" opacity=".6"/>
+  <circle cx="300" cy="319" r="166" fill="none" stroke="#d8fff6" stroke-opacity=".08"/>
+  <circle cx="300" cy="319" r="125" fill="none" stroke="#d8fff6" stroke-opacity=".07"/>
+  <path d="M0 616 120 479l68 78 94-151 88 130 67-79 163 169v274H0Z" fill="#0a1c24"/>
+  <path d="m75 547 45-68 27 31 41 47 94-151 43 64 45 66 67-79 46 48-39-22-28 35-19-20-48 84-61-88-37 67-25-16-48 52-52-33Z" fill="url(#snow)" opacity=".9"/>
+  <path d="M0 666 96 597l66 42 102-85 89 63 75-54 172 101v236H0Z" fill="#07131a"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#effffb">
+    <text x="48" y="55" font-size="11" letter-spacing="4">ПОСЛЕ ТИТРОВ · ПРЕДСТАВЛЯЕТ</text>
+    <text x="300" y="732" font-size="64" font-weight="700" letter-spacing="5" text-anchor="middle">СЕВЕРНЫЙ</text>
+    <text x="300" y="796" font-size="64" font-weight="700" letter-spacing="12" text-anchor="middle">СВЕТ</text>
+    <line x1="174" y1="826" x2="426" y2="826" stroke="#64edc6" stroke-width="2"/>
+    <text x="300" y="857" font-size="12" letter-spacing="3" text-anchor="middle" fill="#9bd6cc">ДРАМА · 118 МИН · 12+</text>
+  </g>
+</svg>

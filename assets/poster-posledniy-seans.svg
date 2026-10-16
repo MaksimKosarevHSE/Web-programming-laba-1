@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Последний сеанс — киноафиша</title>
+  <desc id="desc">Красный кинозал, золотой экран и луч проектора в стиле ар-деко.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1d070a"/>
+      <stop offset=".5" stop-color="#490f16"/>
+      <stop offset="1" stop-color="#100305"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff0b7"/>
+      <stop offset=".52" stop-color="#e8b65f"/>
+      <stop offset="1" stop-color="#8d4d24"/>
+    </linearGradient>
+    <linearGradient id="beam" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff4c9" stop-opacity=".76"/>
+      <stop offset="1" stop-color="#ffe19c" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="clock" cx="50%" cy="44%" r="58%">
+      <stop offset="0" stop-color="#f8dda3"/>
+      <stop offset=".78" stop-color="#bd7a31"/>
+      <stop offset="1" stop-color="#512112"/>
+    </radialGradient>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+  </defs>
+  <rect width="600" height="900" fill="url(#bg)"/>
+  <path d="M36 42h528v816H36z" fill="none" stroke="#c78d42" stroke-width="2"/>
+  <path d="M50 56h500v788H50z" fill="none" stroke="#c78d42" stroke-opacity=".35"/>
+  <g fill="none" stroke="#d39a4c" stroke-width="2" opacity=".65">
+    <path d="M36 138h68V42M564 138h-68V42M36 762h68v96M564 762h-68v96"/>
+    <path d="m36 108 36 30 32-30M564 108l-36 30-32-30M36 792l36-30 32 30M564 792l-36-30-32 30"/>
+  </g>
+  <g font-family="Georgia, 'Times New Roman', serif" text-anchor="middle">
+    <text x="300" y="104" font-size="12" letter-spacing="5" fill="#e8be75">ОДНА НОЧЬ · ОДИН ЭКРАН</text>
+    <text x="300" y="175" font-size="50" font-weight="700" letter-spacing="3" fill="#fff1c8">ПОСЛЕДНИЙ</text>
+    <text x="300" y="226" font-size="50" font-weight="700" letter-spacing="9" fill="#fff1c8">СЕАНС</text>
+  </g>
+  <rect x="118" y="280" width="364" height="216" rx="3" fill="#120507" stroke="#e0a858" stroke-width="10"/>
+  <rect x="135" y="297" width="330" height="182" fill="url(#screen)"/>
+  <circle cx="300" cy="387" r="58" fill="url(#clock)" opacity=".95"/>
+  <circle cx="300" cy="387" r="45" fill="#180709" stroke="#f2cc85" stroke-width="2"/>
+  <g stroke="#e6b95f" stroke-width="2">
+    <path d="M300 349v8M300 417v8M262 387h8M330 387h8"/>
+    <path d="m273 360 6 6M321 408l6 6M327 360l-6 6M279 408l-6 6"/>
+    <path d="M300 387v-26M300 387l21 15" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <circle cx="300" cy="387" r="4" fill="#f8dfa3"/>
+  <path d="m135 479 330 0 71 283H64Z" fill="url(#beam)" opacity=".28" filter="url(#soft)"/>
+  <path d="m170 511 260 0 102 281H68Z" fill="#160507" opacity=".74"/>
+  <g fill="#5f1720" stroke="#c07837" stroke-width="2">
+    <path d="M86 682h83l14 48H70Z"/><path d="M187 682h83l5 48h-99Z"/><path d="M289 682h83l-5 48h-83Z"/><path d="M391 682h83l14 48H377Z"/>
+    <path d="M52 752h111l18 57H32Z"/><path d="M178 752h111l6 57H163Z"/><path d="M311 752h111l15 57H305Z"/><path d="M437 752h111l20 57H422Z"/>
+  </g>
+  <g font-family="Arial, Helvetica, sans-serif" text-anchor="middle">
+    <text x="300" y="543" font-size="12" letter-spacing="4" fill="#e5b866">КОГДА СВЕТ ПОГАСНЕТ</text>
+    <text x="300" y="565" font-size="12" letter-spacing="4" fill="#e5b866">ИСТОРИЯ ТОЛЬКО НАЧНЁТСЯ</text>
+    <text x="300" y="845" font-size="11" letter-spacing="3" fill="#d4a968">ТРИЛЛЕР · 102 МИН · 16+</text>
+  </g>
+</svg>

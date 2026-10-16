@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Письма из лета — киноафиша</title>
+  <desc id="desc">Тёплая летняя композиция с солнцем, конвертами и листьями.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffd989"/>
+      <stop offset=".5" stop-color="#ef9b68"/>
+      <stop offset="1" stop-color="#ba5961"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#fff8d4"/>
+      <stop offset=".7" stop-color="#ffe59a"/>
+      <stop offset="1" stop-color="#ffd77d" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fffbed"/>
+      <stop offset="1" stop-color="#e9d6bc"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="170%" height="180%">
+      <feDropShadow dx="0" dy="14" stdDeviation="12" flood-color="#69363c" flood-opacity=".3"/>
+    </filter>
+  </defs>
+  <rect width="600" height="900" fill="url(#bg)"/>
+  <circle cx="450" cy="197" r="155" fill="url(#sun)" opacity=".72"/>
+  <g fill="none" stroke="#fff2bd" stroke-width="2" opacity=".45">
+    <circle cx="450" cy="197" r="88"/><circle cx="450" cy="197" r="113"/>
+    <path d="M450 54V19M450 375v-35M307 197h-35M628 197h-35M349 96l-25-25M576 323l-25-25M349 298l-25 25M576 71l-25 25"/>
+  </g>
+  <path d="M0 555c81-70 148-61 225 1 82 66 144 61 228-18 56-53 102-57 147-30v392H0Z" fill="#bb5d63" opacity=".5"/>
+  <path d="M0 647c100-66 190-39 280 28 102 75 204 31 320-33v258H0Z" fill="#7b4656" opacity=".52"/>
+  <g fill="#497a64">
+    <path d="M74 487c40 24 59 75 56 140l-10 1c-1-58-18-102-52-126Z"/>
+    <ellipse cx="78" cy="489" rx="21" ry="48" transform="rotate(-39 78 489)"/>
+    <ellipse cx="113" cy="548" rx="18" ry="43" transform="rotate(28 113 548)"/>
+    <path d="M512 415c-42 35-55 88-46 155l10-1c-5-57 8-105 43-137Z"/>
+    <ellipse cx="517" cy="416" rx="23" ry="52" transform="rotate(42 517 416)"/>
+    <ellipse cx="477" cy="482" rx="18" ry="44" transform="rotate(-31 477 482)"/>
+  </g>
+  <g filter="url(#shadow)" transform="rotate(-7 303 476)">
+    <rect x="121" y="346" width="364" height="250" rx="5" fill="url(#paper)"/>
+    <path d="m121 346 182 151 182-151" fill="#f6ead7" stroke="#d7bfa3" stroke-width="2"/>
+    <path d="m121 596 139-126c25-22 60-22 85 0l140 126" fill="#f0dfca" stroke="#d7bfa3" stroke-width="2"/>
+    <circle cx="303" cy="503" r="33" fill="#b85e5d"/>
+    <path d="M287 503c10-8 22-8 32 0-9 11-23 11-32 0Z" fill="#efc67f"/>
+  </g>
+  <g font-family="Georgia, 'Times New Roman', serif" fill="#fff8e8">
+    <text x="44" y="58" font-size="12" letter-spacing="3">ПОСЛЕ ТИТРОВ</text>
+    <text x="300" y="719" font-size="61" font-style="italic" text-anchor="middle">Письма</text>
+    <text x="300" y="781" font-size="56" font-weight="700" letter-spacing="7" text-anchor="middle">ИЗ ЛЕТА</text>
+  </g>
+  <g font-family="Arial, Helvetica, sans-serif" text-anchor="middle">
+    <text x="300" y="825" font-size="12" letter-spacing="3" fill="#ffdfab">НЕКОТОРЫЕ СЛОВА НЕ СТАРЕЮТ</text>
+    <text x="300" y="858" font-size="10" letter-spacing="3" fill="#eabf9a">МЕЛОДРАМА · 96 МИН · 12+</text>
+  </g>
+</svg>

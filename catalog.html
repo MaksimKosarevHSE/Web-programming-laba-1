@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Каталог киноклуба После титров: шесть вымышленных фильмов без спойлеров."
+    />
+    <title>Каталог — После титров</title>
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Перейти к содержанию</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="./index.html" aria-label="После титров — на главную">
+          <span class="brand-mark" aria-hidden="true">ПТ</span>
+          <span class="brand-name">После титров</span>
+        </a>
+
+        <nav class="site-navigation" aria-label="Основная навигация">
+          <ul class="site-navigation__list">
+            <li><a href="./index.html">Главная</a></li>
+            <li><a href="./catalog.html" aria-current="page">Каталог</a></li>
+            <li><a href="./about.html">О клубе</a></li>
+          </ul>
+        </nav>
+
+        <button
+          class="theme-button"
+          id="theme-toggle"
+          type="button"
+          aria-label="Включить светлую тему"
+          title="Включить светлую тему"
+        >
+          <span aria-hidden="true">☀</span>
+        </button>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="page-hero section">
+        <div class="container page-hero__grid">
+          <div>
+            <p class="eyebrow">Каталог без спойлеров</p>
+            <h1>Шесть фильмов на выбор</h1>
+          </div>
+          <div class="page-hero__aside">
+            <p>
+              Здесь собраны драмы, фантастика и детективы. Используйте фильтр,
+              чтобы оставить только нужный жанр.
+            </p>
+            <p class="project-note">Названия, описания и афиши придуманы для учебного сайта.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="catalog-section section" aria-labelledby="catalog-heading">
+        <div class="container">
+          <div class="catalog-toolbar">
+            <h2 class="visually-hidden" id="catalog-heading">Фильмы клуба</h2>
+            <div class="filter-group" aria-label="Фильтр по жанру">
+              <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">
+                Все
+              </button>
+              <button class="filter-button" type="button" data-filter="drama" aria-pressed="false">
+                Драма
+              </button>
+              <button class="filter-button" type="button" data-filter="sci-fi" aria-pressed="false">
+                Фантастика
+              </button>
+              <button class="filter-button" type="button" data-filter="mystery" aria-pressed="false">
+                Детектив
+              </button>
+            </div>
+            <p class="filter-status" id="filter-status" aria-live="polite">Показано: 6 фильмов</p>
+          </div>
+
+          <div class="movie-grid">
+            <article class="movie-card" id="severny-svet" data-genre="drama">
+              <div class="movie-card__poster">
+                <img
+                  src="./assets/poster-severny-svet.svg"
+                  alt="Афиша фильма Северный свет"
+                />
+              </div>
+              <div class="movie-card__content">
+                <div class="movie-card__meta"><span>Драма</span><span>1 ч 42 мин</span></div>
+                <h3>Северный свет</h3>
+                <p>
+                  Фотограф возвращается в родной город и находит в старой мастерской
+                  чужие снимки. Она решает повторить маршрут неизвестного автора.
+                </p>
+              </div>
+            </article>
+
+            <article class="movie-card" id="posledniy-seans" data-genre="drama">
+              <div class="movie-card__poster">
+                <img
+                  src="./assets/poster-posledniy-seans.svg"
+                  alt="Афиша фильма Последний сеанс"
+                />
+              </div>
+              <div class="movie-card__content">
+                <div class="movie-card__meta"><span>Драма</span><span>1 ч 36 мин</span></div>
+                <h3>Последний сеанс</h3>
+                <p>
+                  Старый кинотеатр закрывается, но киномеханик проводит последний показ.
+                  На плёнке зрители узнают знакомые места.
+                </p>
+              </div>
+            </article>
+
+            <article class="movie-card" id="tihaya-orbita" data-genre="sci-fi">
+              <div class="movie-card__poster">
+                <img
+                  src="./assets/poster-tihaya-orbita.svg"
+                  alt="Афиша фильма Тихая орбита"
+                />
+              </div>
+              <div class="movie-card__content">
+                <div class="movie-card__meta"><span>Фантастика</span><span>1 ч 51 мин</span></div>
+                <h3>Тихая орбита</h3>
+                <p>
+                  Дежурная на метеостанции получает сигнал с потерянного спутника.
+                  В сообщении звучит её собственный голос из завтрашнего дня.
+                </p>
+              </div>
+            </article>
+
+            <article class="movie-card" id="gorod-v-tumane" data-genre="mystery">
+              <div class="movie-card__poster">
+                <img
+                  src="./assets/poster-gorod-v-tumane.svg"
+                  alt="Афиша фильма Город в тумане"
+                />
+              </div>
+              <div class="movie-card__content">
+                <div class="movie-card__meta"><span>Детектив</span><span>1 ч 47 мин</span></div>
+                <h3>Город в тумане</h3>
+                <p>
+                  Радиоведущая слышит в ночном эфире координаты. Наутро в этих местах
+                  появляются бумажные журавли.
+                </p>
+              </div>
+            </article>
+
+            <article class="movie-card" id="pisma-iz-leta" data-genre="drama">
+              <div class="movie-card__poster">
+                <img
+                  src="./assets/poster-pisma-iz-leta.svg"
+                  alt="Афиша фильма Письма из лета"
+                />
+              </div>
+              <div class="movie-card__content">
+                <div class="movie-card__meta"><span>Драма</span><span>1 ч 39 мин</span></div>
+                <h3>Письма из лета</h3>
+                <p>
+                  Друзья находят письма, которые написали себе десять лет назад,
+                  и сравнивают детские планы с тем, как сложилась их жизнь.
+                </p>
+              </div>
+            </article>
+
+            <article class="movie-card" id="kod-polunochi" data-genre="sci-fi mystery">
+              <div class="movie-card__poster">
+                <img
+                  src="./assets/poster-kod-polunochi.svg"
+                  alt="Афиша фильма Код полуночи"
+                />
+              </div>
+              <div class="movie-card__content">
+                <div class="movie-card__meta"><span>Фантастика · детектив</span><span>1 ч 54 мин</span></div>
+                <h3>Код полуночи</h3>
+                <p>
+                  Городские экраны показывают код с событиями следующего дня.
+                  Программист пытается предотвратить ошибку, которую код предсказал ему.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section catalog-cta">
+        <div class="container catalog-cta__inner">
+          <div>
+            <p class="eyebrow">Есть идея?</p>
+            <h2>Предложите фильм для следующей встречи</h2>
+          </div>
+          <a class="button button--primary" href="./about.html#suggestion">Открыть форму</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__grid">
+        <div>
+          <a class="brand brand--footer" href="./index.html">
+            <span class="brand-mark" aria-hidden="true">ПТ</span>
+            <span class="brand-name">После титров</span>
+          </a>
+          <p>Учебный сайт. Здесь всё вымышлено.</p>
+        </div>
+        <nav aria-label="Навигация в подвале">
+          <a href="./index.html">Главная</a>
+          <a href="./catalog.html">Каталог</a>
+          <a href="./about.html">О клубе</a>
+        </nav>
+        <p class="site-footer__meta">2026 · Учебный проект по веб-разработке</p>
+      </div>
+    </footer>
+  </body>
+</html>

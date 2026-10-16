@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Код полуночи — киноафиша</title>
+  <desc id="desc">Неоновая цифровая композиция с часами, сеткой и фрагментами кода.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#060612"/>
+      <stop offset=".52" stop-color="#11102d"/>
+      <stop offset="1" stop-color="#04050c"/>
+    </linearGradient>
+    <linearGradient id="neon" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#23f2ff"/>
+      <stop offset=".5" stop-color="#5c8cff"/>
+      <stop offset="1" stop-color="#f43fc4"/>
+    </linearGradient>
+    <radialGradient id="core" cx="50%" cy="45%" r="55%">
+      <stop offset="0" stop-color="#30306c"/>
+      <stop offset=".65" stop-color="#111124"/>
+      <stop offset="1" stop-color="#05050c"/>
+    </radialGradient>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="8" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0v40" fill="none" stroke="#56b8ff" stroke-opacity=".11"/>
+    </pattern>
+  </defs>
+  <rect width="600" height="900" fill="url(#bg)"/>
+  <rect width="600" height="900" fill="url(#grid)"/>
+  <path d="M0 626 300 430l300 196v274H0Z" fill="#071021" opacity=".58"/>
+  <g fill="#41dbe8" opacity=".45" font-family="monospace" font-size="10">
+    <text x="34" y="118">101101 · 00:00 · SYS.27</text>
+    <text x="356" y="153">IF (LIGHT == 0) RUN</text>
+    <text x="56" y="292">0x3F A7 C2 11</text>
+    <text x="405" y="336">ACCESS // UNKNOWN</text>
+    <text x="54" y="574">11100010 01001100</text>
+    <text x="381" y="618">TRACE: NULL</text>
+  </g>
+  <g fill="none" stroke="url(#neon)" transform="translate(300 383)">
+    <circle r="178" stroke-width="2" opacity=".2"/>
+    <circle r="145" stroke-width="1" stroke-dasharray="4 11" opacity=".65"/>
+    <circle r="114" stroke-width="7" opacity=".22" filter="url(#glow)"/>
+    <circle r="114" stroke-width="2"/>
+  </g>
+  <circle cx="300" cy="383" r="98" fill="url(#core)"/>
+  <g transform="translate(300 383)" stroke="#a9f7ff" stroke-linecap="round" filter="url(#glow)">
+    <path d="M0 0V-68" stroke-width="7"/>
+    <path d="M0 0 55 11" stroke-width="7"/>
+    <circle r="7" fill="#f847cb" stroke="none"/>
+  </g>
+  <g transform="translate(300 383)" fill="#b9faff">
+    <rect x="-2" y="-91" width="4" height="13"/><rect x="-2" y="78" width="4" height="13"/>
+    <rect x="78" y="-2" width="13" height="4"/><rect x="-91" y="-2" width="13" height="4"/>
+  </g>
+  <g fill="none" stroke="url(#neon)" opacity=".75">
+    <path d="M35 235h94l29 29h74"/><path d="M565 520h-95l-25-25h-65"/>
+    <path d="M0 700h116l38-38h67"/><path d="M600 221h-92l-24-24h-68"/>
+  </g>
+  <g fill="#35e5ef">
+    <circle cx="129" cy="235" r="4"/><circle cx="470" cy="520" r="4"/><circle cx="154" cy="662" r="4"/><circle cx="484" cy="197" r="4"/>
+  </g>
+  <g font-family="Arial, Helvetica, sans-serif" text-anchor="middle">
+    <text x="300" y="66" font-size="11" letter-spacing="5" fill="#85b5d8">ПОСЛЕ ТИТРОВ · НОЧНОЙ ПОКАЗ</text>
+    <text x="300" y="720" font-size="67" font-weight="700" letter-spacing="11" fill="#ecfaff">КОД</text>
+    <text x="300" y="790" font-size="61" font-weight="300" letter-spacing="5" fill="#ecfaff">ПОЛУНОЧИ</text>
+    <text x="300" y="832" font-size="12" letter-spacing="3" fill="#49dfea">СИСТЕМА НЕ СПИТ</text>
+    <text x="300" y="866" font-size="10" letter-spacing="3" fill="#7887b8">ТЕХНО-ТРИЛЛЕР · 104 МИН · 16+</text>
+  </g>
+</svg>

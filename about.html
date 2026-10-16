@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="О киноклубе После титров: формат встреч, правила и форма предложения фильма."
+    />
+    <title>О клубе — После титров</title>
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Перейти к содержанию</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="./index.html" aria-label="После титров — на главную">
+          <span class="brand-mark" aria-hidden="true">ПТ</span>
+          <span class="brand-name">После титров</span>
+        </a>
+
+        <nav class="site-navigation" aria-label="Основная навигация">
+          <ul class="site-navigation__list">
+            <li><a href="./index.html">Главная</a></li>
+            <li><a href="./catalog.html">Каталог</a></li>
+            <li><a href="./about.html" aria-current="page">О клубе</a></li>
+          </ul>
+        </nav>
+
+        <button
+          class="theme-button"
+          id="theme-toggle"
+          type="button"
+          aria-label="Включить светлую тему"
+          title="Включить светлую тему"
+        >
+          <span aria-hidden="true">☀</span>
+        </button>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="page-hero page-hero--about section">
+        <div class="container about-hero__grid">
+          <div>
+            <p class="eyebrow">О клубе</p>
+            <h1>Смотрим фильмы и обсуждаем их вместе</h1>
+            <p class="hero__lead">
+               Здесь выбирают фильмы, смотрят их вместе и делятся впечатлениями.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section manifesto-section">
+        <div class="container manifesto-grid">
+          <div>
+            <p class="eyebrow">Зачем нужен клуб</p>
+            <h2>После фильма всегда есть что обсудить</h2>
+          </div>
+          <div class="manifesto-copy">
+            <p>
+              После просмотра мы говорим о сюжете, героях и интересных деталях.
+              У каждого может быть своё мнение, и это нормально.
+            </p>
+            <p>
+              В каталоге всего шесть фильмов, поэтому выбрать подходящий вариант проще.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section format-section" id="meeting" aria-labelledby="meeting-heading">
+        <div class="container format-grid">
+          <div class="format-intro">
+            <p class="eyebrow">Формат встречи</p>
+            <h2 id="meeting-heading">Как всё проходит</h2>
+            <p>Обычная встреча состоит из четырёх этапов.</p>
+          </div>
+
+          <div class="format-list">
+            <article>
+              <p>01</p>
+              <div>
+                <h3>Выбор фильма</h3>
+                <p>Читаем короткие описания и голосуем.</p>
+              </div>
+            </article>
+            <article>
+              <p>02</p>
+              <div>
+                <h3>Просмотр</h3>
+                <p>Смотрим фильм и отмечаем интересные сцены.</p>
+              </div>
+            </article>
+            <article>
+              <p>03</p>
+              <div>
+                <h3>Обсуждение</h3>
+                <p>По очереди делимся впечатлениями и не перебиваем друг друга.</p>
+              </div>
+            </article>
+            <article>
+              <p>04</p>
+              <div>
+                <h3>Следующая встреча</h3>
+                <p>Записываем рекомендации и выбираем новый фильм.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section values-section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Правила клуба</p>
+            <h2>Три простых правила</h2>
+          </div>
+          <div class="values-grid">
+            <article>
+              <h3>Без спойлеров</h3>
+              <p>До просмотра говорим только о завязке и жанре фильма.</p>
+            </article>
+            <article>
+              <h3>Уважаем мнения</h3>
+              <p>Обсуждаем фильм, а не вкус собеседника.</p>
+            </article>
+            <article>
+              <h3>Не торопимся</h3>
+              <p>Лучше внимательно посмотреть один фильм, чем несколько фоном.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section suggestion-section" id="suggestion" aria-labelledby="suggestion-heading">
+        <div class="container suggestion-grid">
+          <div class="suggestion-intro">
+            <p class="eyebrow eyebrow--light">Предложение</p>
+            <h2 id="suggestion-heading">Какой фильм добавить?</h2>
+            <p>Форма учебная: данные не отправляются на сервер.</p>
+          </div>
+
+          <form class="suggestion-form" id="suggestion-form">
+            <div class="form-field">
+              <label for="visitor-name">Ваше имя</label>
+              <input id="visitor-name" name="visitor-name" type="text" autocomplete="name" required />
+            </div>
+            <div class="form-field">
+              <label for="film-title">Название фильма</label>
+              <input id="film-title" name="film-title" type="text" required />
+            </div>
+            <div class="form-field">
+              <label for="film-reason">Почему его стоит посмотреть?</label>
+              <textarea id="film-reason" name="film-reason" rows="4" required></textarea>
+            </div>
+            <button class="button button--light" type="submit">Добавить</button>
+            <p class="form-response" id="form-response" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__grid">
+        <div>
+          <a class="brand brand--footer" href="./index.html">
+            <span class="brand-mark" aria-hidden="true">ПТ</span>
+            <span class="brand-name">После титров</span>
+          </a>
+            <p>Учебный сайт. Здесь всё вымышлено.</p>
+        </div>
+        <nav aria-label="Навигация в подвале">
+          <a href="./index.html">Главная</a>
+          <a href="./catalog.html">Каталог</a>
+          <a href="./about.html">О клубе</a>
+        </nav>
+        <p class="site-footer__meta">2026 · Учебный проект по веб-разработке</p>
+      </div>
+    </footer>
+  </body>
+</html>

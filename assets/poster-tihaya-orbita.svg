@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Тихая орбита — киноафиша</title>
+  <desc id="desc">Минималистичная планета с тонкими кольцами на глубоком космическом фоне.</desc>
+  <defs>
+    <radialGradient id="space" cx="55%" cy="35%" r="80%">
+      <stop offset="0" stop-color="#162443"/>
+      <stop offset=".5" stop-color="#090d1c"/>
+      <stop offset="1" stop-color="#03040a"/>
+    </radialGradient>
+    <radialGradient id="planet" cx="32%" cy="28%" r="75%">
+      <stop offset="0" stop-color="#f1ded0"/>
+      <stop offset=".32" stop-color="#b9919c"/>
+      <stop offset=".7" stop-color="#525572"/>
+      <stop offset="1" stop-color="#16182c"/>
+    </radialGradient>
+    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8ce7ff" stop-opacity="0"/>
+      <stop offset=".27" stop-color="#d5f5ff" stop-opacity=".86"/>
+      <stop offset=".7" stop-color="#c6a8ff" stop-opacity=".8"/>
+      <stop offset="1" stop-color="#977eff" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="frontHalf"><rect x="0" y="444" width="600" height="250"/></clipPath>
+    <filter id="halo" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="14"/>
+    </filter>
+  </defs>
+  <rect width="600" height="900" fill="url(#space)"/>
+  <g fill="#d9ecff">
+    <circle cx="52" cy="128" r="1.4"/><circle cx="112" cy="274" r=".8"/><circle cx="181" cy="92" r="1"/>
+    <circle cx="257" cy="174" r="1.2"/><circle cx="375" cy="106" r=".7"/><circle cx="493" cy="190" r="1.1"/>
+    <circle cx="552" cy="86" r="1.5"/><circle cx="527" cy="332" r=".8"/><circle cx="421" cy="291" r="1.2"/>
+    <circle cx="82" cy="431" r=".9"/><circle cx="540" cy="553" r="1"/><circle cx="54" cy="607" r="1.2"/>
+  </g>
+  <g fill="none" stroke="#a5d7ff" stroke-opacity=".16">
+    <circle cx="300" cy="411" r="202"/><circle cx="300" cy="411" r="237"/>
+  </g>
+  <ellipse cx="300" cy="443" rx="250" ry="74" fill="none" stroke="url(#ring)" stroke-width="22" opacity=".33" filter="url(#halo)"/>
+  <ellipse cx="300" cy="443" rx="250" ry="74" fill="none" stroke="url(#ring)" stroke-width="5" opacity=".72"/>
+  <circle cx="300" cy="411" r="137" fill="#a8cfff" opacity=".13" filter="url(#halo)"/>
+  <circle cx="300" cy="411" r="128" fill="url(#planet)"/>
+  <path d="M182 382c39-22 74-31 117-29 51 2 84 15 123 40" fill="none" stroke="#f3d8c9" stroke-opacity=".18" stroke-width="8"/>
+  <path d="M192 456c75 26 144 22 214-11" fill="none" stroke="#16182d" stroke-opacity=".45" stroke-width="13"/>
+  <ellipse cx="300" cy="443" rx="250" ry="74" clip-path="url(#frontHalf)" fill="none" stroke="url(#ring)" stroke-width="6"/>
+  <circle cx="486" cy="385" r="5" fill="#e1f8ff"/>
+  <path d="M486 385 523 348" stroke="#e1f8ff" stroke-width="1" stroke-dasharray="3 5" opacity=".65"/>
+  <g font-family="Arial, Helvetica, sans-serif" text-anchor="middle" fill="#edf4ff">
+    <text x="300" y="70" font-size="11" letter-spacing="5" fill="#89a7d2">ПОСЛЕ ТИТРОВ · ФИЛЬМ НЕДЕЛИ</text>
+    <text x="300" y="712" font-size="68" font-weight="300" letter-spacing="9">ТИХАЯ</text>
+    <text x="300" y="781" font-size="68" font-weight="700" letter-spacing="5">ОРБИТА</text>
+    <text x="300" y="824" font-size="12" letter-spacing="3" fill="#9db7dc">КОСМОС СЛЫШИТ КАЖДОГО</text>
+    <text x="300" y="861" font-size="10" letter-spacing="3" fill="#707f9e">ФАНТАСТИКА · 126 МИН · 12+</text>
+  </g>
+</svg>
